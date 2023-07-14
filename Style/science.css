@@ -1,0 +1,103 @@
+.imgPage {
+  z-index: -1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.block
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  text-align: justify;
+  top:1%;
+  font-size: 20px;
+  width: 85%;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #00FFEF;
+}
+.commentImg
+{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 0px;
+}
+.commentImg img
+{
+  width: 400px;
+  border: 2px solid #000000;
+  margin: 0px;
+  padding: 0px;
+}
+.commentImg p
+{
+  width: 400px;
+  text-align: justify;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0px;
+  padding: 0px;
+}
+hr {
+  width: 80%;
+  height: 8px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px #00000080;
+}
+p {
+  padding-right: 10px;
+}
+h2 {
+  text-align: center;
+}
+
+/* Education */
+.card
+{
+  width: 450px;
+  height: 500px;
+  background-color: #746348b2;
+  border: 2px solid #a9916e;
+  margin: 20px;
+}
+.card h3
+{
+  text-align: center;
+  margin: 10px 10px 0px 10px;
+}
+.card img
+{
+  width: 420px;
+  border: 2px solid #a9916e;
+  margin: 10px auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.card p
+{
+  padding: 0px 10px;
+  font-size: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+  .imgPage {
+    display: none;
+  }
+  main {
+    background: linear-gradient(to bottom right, #a83b2a, #1f1c1c, #f9bc60);
+  }
+
+ h2 {
+  font-size: 30px;
+ }
+ .block {
+  flex-direction: column;
+  align-items: center;
+ }
+}

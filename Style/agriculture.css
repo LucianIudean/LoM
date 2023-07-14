@@ -1,0 +1,167 @@
+.block
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  text-align: justify;
+  top:1%;
+  font-size: 20px;
+  width: 85%;
+  color: #00FFEF;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.imgPage {
+  z-index: -1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.block span {
+  margin-top: 280px;
+  font-size: 30px;
+}
+
+.img-agric {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tableAgric {
+  margin: 20px 250px;
+  height: 600px;
+  font-size: 20px;
+}
+table {
+  margin: 10px auto;
+  background-color: #f8f9fa;
+  color: #202122;
+  border: 1px solid #a2a9b1;
+  border-collapse: collapse;
+  font-family: 'Space Mono', monospace;
+  height: 500px;
+  background-color: #f2d1a0;
+}
+table span {
+  text-decoration:underline dotted 2px;
+}
+th {
+  text-align: center;
+  background: #f2d1a0;
+  font-size: 20px;
+} td
+{
+  border: 1px solid #a2a9b1;
+  padding: 5px;
+  font-size: 15px;
+} ul
+{
+  margin-top:2px;
+  margin-bottom: 2px;
+}
+.plainlist {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0 5%; 
+} 
+table ul
+{
+  flex-direction: column;
+  text-align: left;
+  padding-left: 20px;
+} table a:link, table a:visited
+{
+  color: #0000ff;
+  text-decoration: none;
+  border-bottom:1px solid #000;
+}   table a:hover, table a:active
+{
+  border-bottom:2px solid #0000ff;
+} .agriImg
+{
+  width: 590px;
+}
+
+#row1 {
+  background-image: url('/Assets/water4.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 125px;
+  color:orange;
+}
+#row2 {
+  background-image: url('/Assets/chem0.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#row3 {
+  background-image: url('/Assets/energ1.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  color: #1f111c;
+}
+#row4 {
+  background-image: url('/Assets/condition0.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  color:orange;
+}
+#row1 a {
+  color: aqua;
+}
+#row3 a {
+  color: #2d2b2b;
+}
+#row4 a {
+  color: red;
+}
+
+.column-agric {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+@media (max-width: 1520px) {
+  table {
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgPage {
+    display: none;
+  }
+  main {
+    background: linear-gradient(to bottom right, #a83b2a, #1f1c1c, #f9bc60);
+  }
+ table {
+    width: 500px;
+    height: 300px;
+  }
+.block span {
+  margin-top: 550px;
+  font-size: 15px;
+}
+.column-agric p {
+  text-align: justify;
+  width: 440px;
+}
+.column-agric img {
+  width: 200px;
+}
+.img-agric {
+  width: 500px;
+}
+}
